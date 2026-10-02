@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Mery</title>
+    <link rel="stylesheet" href="PANADERIA.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="logo">
+            <span>🥐</span>
+            <div>
+                <h1>Panadería Mery</h1>
+                <p>El sabor que alegra tus días</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+
+    <!-- ================= INICIO ================= -->
+    <section id="inicio" class="inicio">
+
+        <div class="inicio-contenido">
+            <span class="etiqueta">🥖 RECIÉN HORNEADO</span>
+
+            <h2>
+                El sabor de lo
+                <span>hecho con amor</span>
+            </h2>
+
+            <p>
+                Disfruta de nuestros deliciosos panes, pasteles,
+                galletas y mucho más, preparados cada día con
+                ingredientes de calidad.
+            </p>
+
+            <a href="#productos" class="boton">
+                Ver nuestros productos
+            </a>
+        </div>
+
+        <div class="inicio-imagen">
+            <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85"
+                alt="Pan recién horneado">
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+    <section id="productos" class="seccion">
+
+        <div class="titulo-seccion">
+            <span>NUESTRO MENÚ</span>
+            <h2>Productos deliciosos</h2>
+            <p>Haz clic sobre cualquier producto para conocer más.</p>
+        </div>
+
+        <div class="productos">
+
+            <!-- PAN -->
+            <div class="producto" onclick="mostrarProducto('pan')">
+
+                <div class="imagen-producto">
+                    <img
+                        src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=700&q=85"
+                        alt="Pan tradicional">
+                    <span class="etiqueta-producto">Popular</span>
+                </div>
+
+                <div class="producto-info">
+                    <h3>Pan Tradicional</h3>
+
+                    <p>
+                        Pan fresco, suave y crujiente,
+                        elaborado diariamente.
+                    </p>
+
+                    <div class="precio">$0.25</div>
+
+                    <button>Ver detalles</button>
+                </div>
+
+            </div>
+
+
+            <!-- CROISSANT -->
+            <div class="producto" onclick="mostrarProducto('croissant')">
+
+                <div class="imagen-producto">
+                    <img
+                        src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=85"
+                        alt="Croissant">
+                </div>
+
+                <div class="producto-info">
+                    <h3>Croissant</h3>
+
+                    <p>
+                        Delicioso croissant dorado,
+                        crujiente por fuera y suave por dentro.
+                    </p>
+
+                    <div class="precio">$1.00</div>
+
+                    <button>Ver detalles</button>
+                </div>
+
+            </div>
+
+
+            <!-- PASTEL -->
+            <div class="producto" onclick="mostrarProducto('pastel')">
+
+                <div class="imagen-producto">
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=85"
+                        alt="Pastel">
+                </div>
+
+                <div class="producto-info">
+                    <h3>Pasteles</h3>
+
+                    <p>
+                        Pasteles suaves y deliciosos
+                        para cualquier ocasión.
+                    </p>
+
+                    <div class="precio">Desde $8.00</div>
+
+                    <button>Ver detalles</button>
+                </div>
+
+            </div>
+
+
+            <!-- GALLETAS -->
+            <div class="producto" onclick="mostrarProducto('galletas')">
+
+                <div class="imagen-producto">
+                    <img
+                        src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=85"
+                        alt="Galletas">
+                </div>
+
+                <div class="producto-info">
+                    <h3>Galletas</h3>
+
+                    <p>
+                        Galletas caseras, dulces y
+                        recién horneadas.
+                    </p>
+
+                    <div class="precio">$0.50</div>
+
+                    <button>Ver detalles</button>
+                </div>
+
+            </div>
+
+
+            <!-- DONAS -->
+            <div class="producto" onclick="mostrarProducto('donas')">
+
+                <div class="imagen-producto">
+                    <img
+                        src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=85"
+                        alt="Donas">
+                </div>
+
+                <div class="producto-info">
+                    <h3>Donas</h3>
+
+                    <p>
+                        Donas suaves, dulces y
+                        cubiertas con deliciosos sabores.
+                    </p>
+
+                    <div class="precio">$0.75</div>
+
+                    <button>Ver detalles</button>
+                </div>
+
+            </div>
+
+
+            <!-- CUPCAKES -->
+            <div class="producto" onclick="mostrarProducto('cupcakes')">
+
+                <div class="imagen-producto">
+                    <img
+                        src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=700&q=85"
+                        alt="Cupcakes">
+                </div>
+
+                <div class="producto-info">
+                    <h3>Cupcakes</h3>
+
+                    <p>
+                        Pequeños pastelitos suaves,
+                        perfectos para cualquier momento.
+                    </p>
+
+                    <div class="precio">$1.25</div>
+
+                    <button>Ver detalles</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NOSOTROS ================= -->
+    <section id="nosotros" class="nosotros">
+
+        <div class="nosotros-imagen">
+            <img
+                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85"
+                alt="Panadería">
+        </div>
+
+        <div class="nosotros-texto">
+
+            <span>SOBRE NOSOTROS</span>
+
+            <h2>Hecho con amor para ti</h2>
+
+            <p>
+                En Panadería Mery nos dedicamos a preparar
+                productos frescos y deliciosos para compartir
+                con familiares y amigos.
+            </p>
+
+            <p>
+                Trabajamos cada día con dedicación,
+                utilizando ingredientes seleccionados para
+                ofrecer productos de excelente calidad.
+            </p>
+
+            <div class="beneficios">
+
+                <div>
+                    <strong>🥖</strong>
+                    <p>Productos frescos</p>
+                </div>
+
+                <div>
+                    <strong>❤️</strong>
+                    <p>Hechos con amor</p>
+                </div>
+
+                <div>
+                    <strong>⭐</strong>
+                    <p>Buena calidad</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+    <section id="contacto" class="contacto">
+
+        <div class="titulo-seccion">
+            <span>CONTÁCTANOS</span>
+            <h2>¿Quieres realizar un pedido?</h2>
+
+            <p>
+                Selecciona tu producto y realiza tu pedido
+                de manera rápida y sencilla.
+            </p>
+
+            <button class="boton-pedido" onclick="abrirPedido()">
+                🛒 Realizar pedido
+            </button>
+        </div>
+
+        <div class="datos-contacto">
+
+            <div class="dato">
+                <div class="icono">📍</div>
+                <h3>Ubicación</h3>
+                <p>Urcuquí, Ecuador</p>
+            </div>
+
+            <div class="dato">
+                <div class="icono">📞</div>
+                <h3>Teléfono</h3>
+                <p>0939549357</p>
+            </div>
+
+            <div class="dato">
+                <div class="icono">📧</div>
+                <h3>Correo</h3>
+                <p>panaderiamery@gmail.com</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MODAL PRODUCTO ================= -->
+    <div id="ventanaProducto" class="ventana">
+
+        <div class="contenido-ventana">
+
+            <span class="cerrar" onclick="cerrarProducto()">×</span>
+
+            <div id="contenidoProducto"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= MODAL PEDIDO ================= -->
+    <div id="ventanaPedido" class="ventana">
+
+        <div class="contenido-ventana pedido">
+
+            <span class="cerrar" onclick="cerrarPedido()">×</span>
+
+            <h2>🛒 Realizar Pedido</h2>
+
+            <p class="texto-pedido">
+                Selecciona el producto y la cantidad que deseas.
+            </p>
+
+            <label for="productoPedido">
+                Producto:
+            </label>
+
+            <select id="productoPedido">
+
+                <option value="Pan Tradicional - $0.25">
+                    Pan Tradicional - $0.25
+                </option>
+
+                <option value="Croissant - $1.00">
+                    Croissant - $1.00
+                </option>
+
+                <option value="Pastel - Desde $8.00">
+                    Pastel - Desde $8.00
+                </option>
+
+                <option value="Galletas - $0.50">
+                    Galletas - $0.50
+                </option>
+
+                <option value="Donas - $0.75">
+                    Donas - $0.75
+                </option>
+
+                <option value="Cupcakes - $1.25">
+                    Cupcakes - $1.25
+                </option>
+
+            </select>
+
+
+            <label for="cantidadPedido">
+                Cantidad:
+            </label>
+
+            <input
+                type="number"
+                id="cantidadPedido"
+                min="1"
+                value="1"
+            >
+
+
+            <button
+                class="confirmar-pedido"
+                onclick="confirmarPedido()"
+            >
+                Confirmar pedido
+            </button>
+
+            <p id="mensajePedido"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-logo">
+            🥐 <strong>Panadería Mery</strong>
+        </div>
+
+        <p>
+            El sabor que alegra tus días ❤️
+        </p>
+
+        <small>
+            © 2026 Panadería Mery - Todos los derechos reservados
+        </small>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+
+        function mostrarProducto(producto) {
+
+            const contenido =
+                document.getElementById("contenidoProducto");
+
+            let informacion = "";
+
+            if (producto === "pan") {
+
+                informacion = `
+                    <h2>🥖 Pan Tradicional</h2>
+
+                    <div class="detalle-precio">
+                        $0.25
+                    </div>
+
+                    <h3>Ingredientes</h3>
+
+                    <ul>
+                        <li>Harina de trigo</li>
+                        <li>Agua</li>
+                        <li>Levadura</li>
+                        <li>Azúcar</li>
+                        <li>Sal</li>
+                        <li>Mantequilla</li>
+                    </ul>
+
+                    <h3>Preparación</h3>
+
+                    <p>
+                        Se mezclan los ingredientes hasta obtener
+                        una masa suave. Luego se deja reposar para
+                        que la masa crezca. Finalmente se forman
+                        los panes y se hornean hasta quedar dorados.
+                    </p>
+                `;
+
+            }
+
+            else if (producto === "croissant") {
+
+                informacion = `
+                    <h2>🥐 Croissant</h2>
+
+                    <div class="detalle-precio">
+                        $1.00
+                    </div>
+
+                    <h3>Ingredientes</h3>
+
+                    <ul>
+                        <li>Harina</li>
+                        <li>Mantequilla</li>
+                        <li>Leche</li>
+                        <li>Azúcar</li>
+                        <li>Levadura</li>
+                        <li>Sal</li>
+                    </ul>
+
+                    <h3>Preparación</h3>
+
+                    <p>
+                        Se prepara una masa suave y se incorpora
+                        la mantequilla mediante varias capas.
+                        Después se corta y se enrolla formando
+                        el croissant para finalmente hornearlo.
+                    </p>
+                `;
+
+            }
+
+            else if (producto === "pastel") {
+
+                informacion = `
+                    <h2>🎂 Pastel</h2>
+
+                    <div class="detalle-precio">
+                        Desde $8.00
+                    </div>
+
+                    <h3>Ingredientes</h3>
+
+                    <ul>
+                        <li>Harina</li>
+                        <li>Huevos</li>
+                        <li>Azúcar</li>
+                        <li>Leche</li>
+                        <li>Mantequilla</li>
+                        <li>Polvo de hornear</li>
+                        <li>Vainilla</li>
+                    </ul>
+
+                    <h3>Preparación</h3>
+
+                    <p>
+                        Se baten los huevos con el azúcar.
+                        Se agregan los demás ingredientes hasta
+                        obtener una mezcla uniforme. Luego se
+                        coloca en un molde y se hornea.
+                    </p>
+                `;
+
+            }
+
+            else if (producto === "galletas") {
+
+                informacion = `
+                    <h2>🍪 Galletas</h2>
+
+                    <div class="detalle-precio">
+                        $0.50
+                    </div>
+
+                    <h3>Ingredientes</h3>
+
+                    <ul>
+                        <li>Harina</li>
+                        <li>Mantequilla</li>
+                        <li>Azúcar</li>
+                        <li>Huevo</li>
+                        <li>Vainilla</li>
+                        <li>Chispas de chocolate</li>
+                    </ul>
+
+                    <h3>Preparación</h3>
+
+                    <p>
+                        Se mezclan los ingredientes hasta formar
+                        una masa. Se forman pequeñas porciones,
+                        se colocan en una bandeja y se hornean
+                        hasta quedar ligeramente doradas.
+                    </p>
+                `;
+
+            }
+
+            else if (producto === "donas") {
+
+                informacion = `
+                    <h2>🍩 Donas</h2>
+
+                    <div class="detalle-precio">
+                        $0.75
+                    </div>
+
+                    <h3>Ingredientes</h3>
+
+                    <ul>
+                        <li>Harina</li>
+                        <li>Leche</li>
+                        <li>Azúcar</li>
+                        <li>Huevo</li>
+                        <li>Mantequilla</li>
+                        <li>Levadura</li>
+                        <li>Sal</li>
+                    </ul>
+
+                    <h3>Preparación</h3>
+
+                    <p>
+                        Se prepara una masa con todos los ingredientes.
+                        Se deja reposar, luego se cortan las donas
+                        y se cocinan hasta obtener una textura suave
+                        y dorada.
+                    </p>
+                `;
+
+            }
+
+            else if (producto === "cupcakes") {
+
+                informacion = `
+                    <h2>🧁 Cupcakes</h2>
+
+                    <div class="detalle-precio">
+                        $1.25
+                    </div>
+
+                    <h3>Ingredientes</h3>
+
+                    <ul>
+                        <li>Harina</li>
+                        <li>Huevos</li>
+                        <li>Azúcar</li>
+                        <li>Leche</li>
+                        <li>Mantequilla</li>
+                        <li>Polvo de hornear</li>
+                        <li>Vainilla</li>
+                    </ul>
+
+                    <h3>Preparación</h3>
+
+                    <p>
+                        Se mezclan los ingredientes hasta obtener
+                        una masa cremosa. Se coloca en moldes
+                        individuales y se hornea. Finalmente se
+                        pueden decorar al gusto.
+                    </p>
+                `;
+
+            }
+
+            contenido.innerHTML = informacion;
+
+            document.getElementById("ventanaProducto").style.display = "flex";
+        }
+
+
+        function cerrarProducto() {
+
+            document.getElementById("ventanaProducto").style.display = "none";
+
+        }
+
+
+        function abrirPedido() {
+
+            document.getElementById("ventanaPedido").style.display = "flex";
+
+        }
+
+
+        function cerrarPedido() {
+
+            document.getElementById("ventanaPedido").style.display = "none";
+
+        }
+
+
+        function confirmarPedido() {
+
+            let producto =
+                document.getElementById("productoPedido").value;
+
+            let cantidad =
+                document.getElementById("cantidadPedido").value;
+
+            let mensaje =
+                document.getElementById("mensajePedido");
+
+            if (cantidad < 1) {
+
+                mensaje.innerHTML =
+                    "⚠️ Selecciona una cantidad válida.";
+
+                return;
+            }
+
+            mensaje.innerHTML =
+                "✅ Pedido realizado correctamente: " +
+                cantidad +
+                " × " +
+                producto;
+
+        }
+
+
+        window.onclick = function(event) {
+
+            const ventanaProducto =
+                document.getElementById("ventanaProducto");
+
+            const ventanaPedido =
+                document.getElementById("ventanaPedido");
+
+            if (event.target === ventanaProducto) {
+                cerrarProducto();
+            }
+
+            if (event.target === ventanaPedido) {
+                cerrarPedido();
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
